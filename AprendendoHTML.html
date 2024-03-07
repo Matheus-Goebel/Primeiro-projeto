@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="AprendendoCSS.css"/>
+    <title>Formulário</title>
+</head>
+<body>
+    <div class="box">
+        <form action="">
+            <fieldset>
+                <legend><b>Formulário para os Participantes</b></legend>
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="nome" id="nome" class="inputUser" required>
+                    <label for="nome" class="labelInput">Nome completo</label>
+                </div>
+                <p class="paragrafo1"><b>Salas de estudo 📖</b></p>                    
+                <input type="radio" id="salaDeEstudo1" name="salaDeEstudo" value="1" required>
+                <label for="salaDeEstudo1">Sala de estudo numero 1</label>
+                <br>
+                <input type="radio" id="salaDeEstudo2" name="salaDeEstudo" value="2" required>
+                <label for="salaDeEstudo2">Sala de estudo numero 2</label>
+                <br>
+                <br>                             
+                <p class="paragrafo1"><b>Salas de café</b> ☕</p>
+                <input type="radio" id="salaDeCafe1" name="salaDeCafe" value="1" required>
+                <label for="salaDeCafe1">Sala de café numero 1</label>
+                <br>
+                <input type="radio" id="salaDeCafe2" name="salaDeCafe" value="2" required>
+                <label for="salaDeCafe2">Sala de café numero 2</label>
+                <br><br>
+                <button type="button" onclick="enviarDadosFormulario()" id="botao"><b>Enviar os dados</b></button>                
+                <button class="invi" type="button" onclick="procurarAplicante()" id="botao2"><b>Procurar aplicante especifico</b></button>                
+                <button class="invi" type="button" onclick="pessoasSalaDeEstudo()" id="botao3"><b>Pessoas nas salas de estudo</b></button>                
+                <button class="invi" type="button" onclick="pessoasSalaDeCafe()" id="botao4"><b>Pessoas nas salas de cafe</b></button>                
+                <button class="invi" type="button" onclick="removerAplicante()" id="botao5"><b>Remover aplicante</b></button>                
+                <button class="invi" type="button" onclick="resetarTudo()" id="botao6"><b>Remover todos aplicantes</b></button>
+            </form>
+        </div>
+        <button type="submit" onclick="logSystem()" id="botaoSecreto"><b>Log no console</b></button>
+    <script src="AprendendoJS.js"></script>
+</body>
+</html>

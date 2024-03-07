@@ -1,0 +1,95 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, rgb(226, 228, 138), rgb(70, 22, 22));
+}
+.box{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0,0,0,0.6);
+    padding: 15px;
+    border-radius: 3px;
+    width: 20%;
+}
+fieldset{
+    border: 3px solid rgb(179, 204, 34);
+}
+legend{
+    border: 1px solid rgb(179, 204, 34);
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(179, 204, 34);
+    border-radius: 5px;   
+    color: black;     
+}
+.inputBox{
+    position: relative;
+}
+.inputUser{
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 1px;    
+}
+.labelInput{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+}
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput{
+    top: -20px;
+    font-size: 12px;
+    color: rgb(179, 204, 34)
+}
+.invi {
+    background-image: linear-gradient(to right, rgb(226, 228, 138), rgb(70, 22, 22));
+    width: 100%;        
+    padding: 15px;
+    margin-block: 7px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+#botao {
+    background-image: linear-gradient(to right, rgb(226, 228, 138), rgb(70, 22, 22));
+    width: 100%;       
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+#botao:hover {
+    background-image: linear-gradient(to right, rgb(206, 208, 118), rgb(60, 12, 12));
+}
+.invi:hover {
+    background-image: linear-gradient(to right, rgb(206, 208, 118), rgb(60, 12, 12));
+}
+#botaoSecreto{ 
+    background:transparent;
+    border:0;      
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+}
+
+ #botaoSecreto:hover{
+    background: linear-gradient(to left, red, blue, yellow, green, purple, pink,brown);   
+}
+
+.paragrafo1 {
+    
+    color:rgb(199, 212, 7);   
+    
+}
